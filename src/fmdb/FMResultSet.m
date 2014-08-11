@@ -1,8 +1,8 @@
 #import "FMResultSet.h"
-#import "FMDatabase.h"
+#import "FMReadOnlyDatabase.h"
 #import "unistd.h"
 
-@interface FMDatabase ()
+@interface FMReadOnlyDatabase ()
 - (void)resultSetDidClose:(FMResultSet *)resultSet;
 @end
 
@@ -11,7 +11,7 @@
 @synthesize query=_query;
 @synthesize statement=_statement;
 
-+ (instancetype)resultSetWithStatement:(FMStatement *)statement usingParentDatabase:(FMDatabase*)aDB {
++ (instancetype)resultSetWithStatement:(FMStatement *)statement usingParentDatabase:(FMReadOnlyDatabase*)aDB {
     
     FMResultSet *rs = [[FMResultSet alloc] init];
     
@@ -374,7 +374,7 @@
     return [NSString stringWithUTF8String: sqlite3_column_name([_statement statement], columnIdx)];
 }
 
-- (void)setParentDB:(FMDatabase *)newDb {
+- (void)setParentDB:(FMReadOnlyDatabase *)newDb {
     _parentDB = newDb;
 }
 

@@ -13,7 +13,7 @@
 #endif
 #endif
 
-@class FMDatabase;
+@class FMReadOnlyDatabase;
 @class FMStatement;
 
 /** Represents the results of executing a query on an `<FMDatabase>`.
@@ -24,7 +24,7 @@
  */
 
 @interface FMResultSet : NSObject {
-    FMDatabase          *_parentDB;
+    FMReadOnlyDatabase          *_parentDB;
     FMStatement         *_statement;
     
     NSString            *_query;
@@ -60,13 +60,13 @@
  @return A `FMResultSet` on success; `nil` on failure
  */
 
-+ (instancetype)resultSetWithStatement:(FMStatement *)statement usingParentDatabase:(FMDatabase*)aDB;
++ (instancetype)resultSetWithStatement:(FMStatement *)statement usingParentDatabase:(FMReadOnlyDatabase*)aDB;
 
 /** Close result set */
 
 - (void)close;
 
-- (void)setParentDB:(FMDatabase *)newDb;
+- (void)setParentDB:(FMReadOnlyDatabase *)newDb;
 
 ///---------------------------------------
 /// @name Iterating through the result set
