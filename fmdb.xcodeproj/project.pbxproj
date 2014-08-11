@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F36E425199965CA00DDFFEC /* FMReadOnlyDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F36E424199965CA00DDFFEC /* FMReadOnlyDatabase.m */; };
 		621721B21892BFE30006691F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
 		621721B31892BFE30006691F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
 		621721B41892BFE30006691F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; };
@@ -83,6 +84,9 @@
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32A70AAB03705E1F00C91783 /* fmdb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmdb_Prefix.pch; path = src/sample/fmdb_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		3F36E423199965CA00DDFFEC /* FMReadOnlyDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMReadOnlyDatabase.h; path = src/fmdb/FMReadOnlyDatabase.h; sourceTree = "<group>"; };
+		3F36E424199965CA00DDFFEC /* FMReadOnlyDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMReadOnlyDatabase.m; path = src/fmdb/FMReadOnlyDatabase.m; sourceTree = "<group>"; };
+		3F36E42619996B3E00DDFFEC /* FMReadOnlyDatabase+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMReadOnlyDatabase+Protected.h"; sourceTree = "<group>"; };
 		6290CBB5188FE836009790F8 /* libFMDB-IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFMDB-IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6290CBB6188FE836009790F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6290CBC6188FE837009790F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -226,6 +230,9 @@
 				CC50F2CB0DF9183600E4AAAE /* FMDatabaseAdditions.m */,
 				CC9E4EB713B31188005F9210 /* FMDatabasePool.h */,
 				CC9E4EB813B31188005F9210 /* FMDatabasePool.m */,
+				3F36E42619996B3E00DDFFEC /* FMReadOnlyDatabase+Protected.h */,
+				3F36E423199965CA00DDFFEC /* FMReadOnlyDatabase.h */,
+				3F36E424199965CA00DDFFEC /* FMReadOnlyDatabase.m */,
 			);
 			name = fmdb;
 			sourceTree = "<group>";
@@ -448,6 +455,7 @@
 				CCC24EC70A13E34D00A6D3E3 /* FMResultSet.m in Sources */,
 				CC7CE42818F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				CC50F2CD0DF9183600E4AAAE /* FMDatabaseAdditions.m in Sources */,
+				3F36E425199965CA00DDFFEC /* FMReadOnlyDatabase.m in Sources */,
 				CC9E4EB913B31188005F9210 /* FMDatabasePool.m in Sources */,
 				CC47A010148581E9002CCDAB /* FMDatabaseQueue.m in Sources */,
 			);
