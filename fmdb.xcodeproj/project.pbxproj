@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F36E425199965CA00DDFFEC /* FMReadOnlyDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F36E424199965CA00DDFFEC /* FMReadOnlyDatabase.m */; };
 		3F36E42A1999752A00DDFFEC /* FMReadOnlyDatabase+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F36E4291999752A00DDFFEC /* FMReadOnlyDatabase+Protected.h */; };
+		3F36E42D1999776F00DDFFEC /* FMReadOnlyDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F36E42B1999776F00DDFFEC /* FMReadOnlyDatabasePool.h */; };
+		3F36E42E1999776F00DDFFEC /* FMReadOnlyDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F36E42C1999776F00DDFFEC /* FMReadOnlyDatabasePool.m */; };
 		621721B21892BFE30006691F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
 		621721B31892BFE30006691F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
 		621721B41892BFE30006691F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; };
@@ -88,6 +90,8 @@
 		3F36E423199965CA00DDFFEC /* FMReadOnlyDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMReadOnlyDatabase.h; path = src/fmdb/FMReadOnlyDatabase.h; sourceTree = "<group>"; };
 		3F36E424199965CA00DDFFEC /* FMReadOnlyDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMReadOnlyDatabase.m; path = src/fmdb/FMReadOnlyDatabase.m; sourceTree = "<group>"; };
 		3F36E4291999752A00DDFFEC /* FMReadOnlyDatabase+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FMReadOnlyDatabase+Protected.h"; path = "src/fmdb/FMReadOnlyDatabase+Protected.h"; sourceTree = "<group>"; };
+		3F36E42B1999776F00DDFFEC /* FMReadOnlyDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMReadOnlyDatabasePool.h; path = src/fmdb/FMReadOnlyDatabasePool.h; sourceTree = "<group>"; };
+		3F36E42C1999776F00DDFFEC /* FMReadOnlyDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMReadOnlyDatabasePool.m; path = src/fmdb/FMReadOnlyDatabasePool.m; sourceTree = "<group>"; };
 		6290CBB5188FE836009790F8 /* libFMDB-IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFMDB-IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6290CBB6188FE836009790F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6290CBC6188FE837009790F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -234,6 +238,8 @@
 				3F36E423199965CA00DDFFEC /* FMReadOnlyDatabase.h */,
 				3F36E424199965CA00DDFFEC /* FMReadOnlyDatabase.m */,
 				3F36E4291999752A00DDFFEC /* FMReadOnlyDatabase+Protected.h */,
+				3F36E42B1999776F00DDFFEC /* FMReadOnlyDatabasePool.h */,
+				3F36E42C1999776F00DDFFEC /* FMReadOnlyDatabasePool.m */,
 			);
 			name = fmdb;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				8314AF3318CD73D600EC0E25 /* FMDB.h in Headers */,
 				3F36E42A1999752A00DDFFEC /* FMReadOnlyDatabase+Protected.h in Headers */,
 				CC9E4EBA13B31188005F9210 /* FMDatabasePool.h in Headers */,
+				3F36E42D1999776F00DDFFEC /* FMReadOnlyDatabasePool.h in Headers */,
 				CC47A00F148581E9002CCDAB /* FMDatabaseQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE42910812B42FCC0088BD94 /* FMDatabase.m in Sources */,
+				3F36E42E1999776F00DDFFEC /* FMReadOnlyDatabasePool.m in Sources */,
 				EE42910512B42FBC0088BD94 /* FMDatabaseAdditions.m in Sources */,
 				EE42910A12B42FD20088BD94 /* FMResultSet.m in Sources */,
 				CC9E4EBB13B31188005F9210 /* FMDatabasePool.m in Sources */,
